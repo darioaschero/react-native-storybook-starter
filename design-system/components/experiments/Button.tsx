@@ -39,7 +39,7 @@ export const MyButton = ({text, onPress, color, textColor}: ButtonProps) => {
       onPress={onPress}
       activeOpacity={0.8}>
       <Text style={[styles.buttonText, !!textColor && {color: textColor}]}>
-        {theme.colors.mainBackground}
+        {text}
       </Text>
     </TouchableOpacity>
   </View>
